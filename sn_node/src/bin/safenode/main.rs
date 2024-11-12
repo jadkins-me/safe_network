@@ -399,9 +399,9 @@ You can check your reward balance by running:
     tokio::spawn(async move {
         use rand::{thread_rng, Rng};
 
-        const CPU_CHECK_INTERVAL: Duration = Duration::from_secs(60);
-        const CPU_USAGE_THRESHOLD: f32 = 50.0;
-        const HIGH_CPU_CONSECUTIVE_LIMIT: u8 = 5;
+        const CPU_CHECK_INTERVAL: Duration = Duration::from_secs(240);
+        const CPU_USAGE_THRESHOLD: f32 = 90.0;
+        const HIGH_CPU_CONSECUTIVE_LIMIT: u8 = 10;
         const NODE_STOP_DELAY: Duration = Duration::from_secs(1);
         const INITIAL_DELAY_MIN_S: u64 = 10;
         const INITIAL_DELAY_MAX_S: u64 =
